@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <Navbarr className="bg-white shadow-sm mb-3">
+    <Navbarr sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
         <Nav className="me-auto">
           <Nav.Link to="/" as={NavLink}>
@@ -18,9 +18,8 @@ export const Navbar = () => {
           </Nav.Link>
         </Nav>
         <Button
-          style={{ width: "3rem", height: "3rem",position:"relative" }}
+          style={{ width: "3rem", height: "3rem", position: "relative" }}
           variant="outline-primary"
-          
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +37,7 @@ export const Navbar = () => {
               position: "absolute",
               bottom: 0,
               right: 0,
-              transform:"translate(25%,25%)"
+              transform: "translate(25%,25%)",
             }}
           >
             3
